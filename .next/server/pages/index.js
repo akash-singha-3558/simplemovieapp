@@ -1,82 +1,194 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/index";
-exports.ids = ["pages/index"];
+exports.id = 405;
+exports.ids = [405];
 exports.modules = {
 
-/***/ "./Component/cards.jsx":
-/*!*****************************!*\
-  !*** ./Component/cards.jsx ***!
-  \*****************************/
+/***/ 591:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/Link */ \"next/Link\");\n/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ \"next/router\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ \"axios\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__, axios__WEBPACK_IMPORTED_MODULE_4__]);\n([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__, axios__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\n\n\n\nconst Cards = ({ el  })=>{\n    const toast = (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.useToast)();\n    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_3__.useRouter)();\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {\n        m: \"auto\",\n        border: \"1px solid #679b64\",\n        h: \"350px\",\n        w: \"340px\",\n        textAlign: \"center\",\n        borderRadius: \"10px\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Image, {\n                src: el.Images[2],\n                h: \"240px\",\n                w: \"100%\",\n                alt: \"movie\",\n                borderTopLeftRadius: \"10px\",\n                borderTopRightRadius: \"10px\"\n            }, void 0, false, {\n                fileName: \"E:\\\\nextjsfirstdeploy\\\\simplemovieapp\\\\Component\\\\cards.jsx\",\n                lineNumber: 11,\n                columnNumber: 1\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {\n                children: [\n                    \"Movie Name : \",\n                    el.Title\n                ]\n            }, void 0, true, {\n                fileName: \"E:\\\\nextjsfirstdeploy\\\\simplemovieapp\\\\Component\\\\cards.jsx\",\n                lineNumber: 12,\n                columnNumber: 1\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Flex, {\n                justifyContent: \"space-between\",\n                p: \"2\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Button, {\n                        border: \"none\",\n                        bg: \"teal\",\n                        color: \"white\",\n                        p: \"5\",\n                        borderRadius: \"5\",\n                        cursor: \"pointer\",\n                        onClick: async ()=>{\n                            let data = await axios__WEBPACK_IMPORTED_MODULE_4__[\"default\"].post(\"https://mockserver-rny6.onrender.com/cart\", {\n                                ...el\n                            });\n                            toast({\n                                position: \"top\",\n                                description: \"Movie has been added your watchlist\",\n                                status: \"success\",\n                                duration: 3000,\n                                isClosable: true\n                            });\n                        },\n                        children: \"Add to Watch List\"\n                    }, void 0, false, {\n                        fileName: \"E:\\\\nextjsfirstdeploy\\\\simplemovieapp\\\\Component\\\\cards.jsx\",\n                        lineNumber: 15,\n                        columnNumber: 1\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_Link__WEBPACK_IMPORTED_MODULE_2___default()), {\n                        href: el.id.toString(),\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Button, {\n                            border: \"none\",\n                            color: \"white\",\n                            bg: \"red\",\n                            p: \"5\",\n                            borderRadius: \"5\",\n                            textDecoration: \"none\",\n                            cursor: \"pointer\",\n                            children: \"More Details\"\n                        }, void 0, false, {\n                            fileName: \"E:\\\\nextjsfirstdeploy\\\\simplemovieapp\\\\Component\\\\cards.jsx\",\n                            lineNumber: 32,\n                            columnNumber: 31\n                        }, undefined)\n                    }, void 0, false, {\n                        fileName: \"E:\\\\nextjsfirstdeploy\\\\simplemovieapp\\\\Component\\\\cards.jsx\",\n                        lineNumber: 32,\n                        columnNumber: 1\n                    }, undefined)\n                ]\n            }, void 0, true, {\n                fileName: \"E:\\\\nextjsfirstdeploy\\\\simplemovieapp\\\\Component\\\\cards.jsx\",\n                lineNumber: 13,\n                columnNumber: 1\n            }, undefined)\n        ]\n    }, el.id, true, {\n        fileName: \"E:\\\\nextjsfirstdeploy\\\\simplemovieapp\\\\Component\\\\cards.jsx\",\n        lineNumber: 10,\n        columnNumber: 1\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Cards);\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9Db21wb25lbnQvY2FyZHMuanN4LmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7OztBQUFBO0FBQTREO0FBQy9CO0FBQ1c7QUFDSTtBQUNsQjtBQUMxQixNQUFNUyxRQUFNLENBQUMsRUFBQ0MsR0FBRSxFQUFDLEdBQUc7SUFDbEIsTUFBTUMsUUFBUUosMERBQVFBO0lBQ3RCLE1BQU1LLFNBQU9OLHNEQUFTQTtJQUN0QixxQkFDRiw4REFBQ0gsaURBQUdBO1FBQWFVLEdBQUU7UUFBT0MsUUFBTztRQUFvQkMsR0FBRTtRQUFRQyxHQUFFO1FBQVFDLFdBQVU7UUFBU0MsY0FBYTs7MEJBQ3pHLDhEQUFDbEIsbURBQUtBO2dCQUFDbUIsS0FBS1QsR0FBR1UsTUFBTSxDQUFDLEVBQUU7Z0JBQUVMLEdBQUU7Z0JBQVFDLEdBQUU7Z0JBQU9LLEtBQUk7Z0JBQVFDLHFCQUFvQjtnQkFBT0Msc0JBQXFCOzs7Ozs7MEJBQ3pHLDhEQUFDdEIsa0RBQUlBOztvQkFBQztvQkFBY1MsR0FBR2MsS0FBSzs7Ozs7OzswQkFDNUIsOERBQUNwQixrREFBSUE7Z0JBQUNxQixnQkFBZTtnQkFBZ0JDLEdBQUU7O2tDQUV2Qyw4REFBQ3hCLG9EQUFNQTt3QkFBQ1ksUUFBTzt3QkFBT2EsSUFBRzt3QkFBT0MsT0FBTTt3QkFBUUYsR0FBRTt3QkFBSVIsY0FBYTt3QkFBSVcsUUFBTzt3QkFDMUVDLFNBQVMsVUFBVTs0QkFDbkIsSUFBSUMsT0FBTyxNQUFNdkIsa0RBQVUsQ0FBQyw2Q0FBNEM7Z0NBQUMsR0FBR0UsRUFBRTs0QkFBQTs0QkFDOUVDLE1BQU07Z0NBQ0pzQixVQUFTO2dDQUVUQyxhQUFhO2dDQUNiQyxRQUFRO2dDQUNSQyxVQUFVO2dDQUNWQyxZQUFZLElBQUk7NEJBQ2xCO3dCQUdBO2tDQUNEOzs7Ozs7a0NBR0QsOERBQUNoQyxrREFBSUE7d0JBQUNpQyxNQUFNNUIsR0FBRzZCLEVBQUUsQ0FBQ0MsUUFBUTtrQ0FBSSw0RUFBQ3RDLG9EQUFNQTs0QkFBQ1ksUUFBTzs0QkFBT2MsT0FBTTs0QkFBUUQsSUFBRzs0QkFBTUQsR0FBRTs0QkFBSVIsY0FBYTs0QkFBSXVCLGdCQUFlOzRCQUFPWixRQUFPO3NDQUFVOzs7Ozs7Ozs7Ozs7Ozs7Ozs7T0F0Qi9IbkIsR0FBRzZCLEVBQUU7Ozs7O0FBMkJmO0FBQ0EsaUVBQWU5QixLQUFLQSxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbW92aWVhcHAvLi9Db21wb25lbnQvY2FyZHMuanN4PzI5NTMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSW1hZ2UsVGV4dCxCdXR0b24sQm94LEZsZXh9IGZyb20gXCJAY2hha3JhLXVpL3JlYWN0XCJcclxuaW1wb3J0IExpbmsgZnJvbSBcIm5leHQvTGlua1wiO1xyXG5pbXBvcnQgeyB1c2VSb3V0ZXIgfSBmcm9tIFwibmV4dC9yb3V0ZXJcIjtcclxuaW1wb3J0IHsgdXNlVG9hc3QgfSBmcm9tICdAY2hha3JhLXVpL3JlYWN0JztcclxuaW1wb3J0IGF4aW9zIGZyb20gXCJheGlvc1wiO1xyXG5jb25zdCBDYXJkcz0oe2VsfSk9PntcclxuICBjb25zdCB0b2FzdCA9IHVzZVRvYXN0KClcclxuICBjb25zdCByb3V0ZXI9dXNlUm91dGVyKCk7XHJcbiAgcmV0dXJuKFxyXG48Qm94IGtleT17ZWwuaWR9IG09XCJhdXRvXCIgYm9yZGVyPVwiMXB4IHNvbGlkICM2NzliNjRcIiBoPVwiMzUwcHhcIiB3PVwiMzQwcHhcIiB0ZXh0QWxpZ249XCJjZW50ZXJcIiBib3JkZXJSYWRpdXM9XCIxMHB4XCIgPlxyXG48SW1hZ2Ugc3JjPXtlbC5JbWFnZXNbMl19IGg9XCIyNDBweFwiIHc9XCIxMDAlXCIgYWx0PVwibW92aWVcIiBib3JkZXJUb3BMZWZ0UmFkaXVzPVwiMTBweFwiIGJvcmRlclRvcFJpZ2h0UmFkaXVzPVwiMTBweFwiLz5cclxuPFRleHQ+TW92aWUgTmFtZSA6IHtlbC5UaXRsZX08L1RleHQ+XHJcbjxGbGV4IGp1c3RpZnlDb250ZW50PVwic3BhY2UtYmV0d2VlblwiIHA9XCIyXCI+XHJcblxyXG48QnV0dG9uIGJvcmRlcj1cIm5vbmVcIiBiZz1cInRlYWxcIiBjb2xvcj1cIndoaXRlXCIgcD1cIjVcIiBib3JkZXJSYWRpdXM9XCI1XCIgY3Vyc29yPVwicG9pbnRlclwiXHJcbiAgb25DbGljaz17YXN5bmMgKCk9PntcclxuICBsZXQgZGF0YSA9IGF3YWl0IGF4aW9zLnBvc3QoXCJodHRwczovL21vY2tzZXJ2ZXItcm55Ni5vbnJlbmRlci5jb20vY2FydFwiLHsuLi5lbH0pXHJcbiAgdG9hc3Qoe1xyXG4gICAgcG9zaXRpb246XCJ0b3BcIixcclxuICAgIFxyXG4gICAgZGVzY3JpcHRpb246IFwiTW92aWUgaGFzIGJlZW4gYWRkZWQgeW91ciB3YXRjaGxpc3RcIixcclxuICAgIHN0YXR1czogJ3N1Y2Nlc3MnLFxyXG4gICAgZHVyYXRpb246IDMwMDAsXHJcbiAgICBpc0Nsb3NhYmxlOiB0cnVlLFxyXG4gIH0pXHJcblxyXG5cclxuICB9fVxyXG4+QWRkIHRvIFdhdGNoIExpc3Q8L0J1dHRvbj5cclxuXHJcblxyXG48TGluayBocmVmPXtlbC5pZC50b1N0cmluZygpfT48QnV0dG9uIGJvcmRlcj1cIm5vbmVcIiBjb2xvcj1cIndoaXRlXCIgYmc9XCJyZWRcIiBwPVwiNVwiIGJvcmRlclJhZGl1cz1cIjVcIiB0ZXh0RGVjb3JhdGlvbj1cIm5vbmVcIiBjdXJzb3I9XCJwb2ludGVyXCI+TW9yZSBEZXRhaWxzPC9CdXR0b24+PC9MaW5rPlxyXG48L0ZsZXg+XHJcblxyXG48L0JveD5cclxuICApXHJcbn1cclxuZXhwb3J0IGRlZmF1bHQgQ2FyZHM7Il0sIm5hbWVzIjpbIkltYWdlIiwiVGV4dCIsIkJ1dHRvbiIsIkJveCIsIkZsZXgiLCJMaW5rIiwidXNlUm91dGVyIiwidXNlVG9hc3QiLCJheGlvcyIsIkNhcmRzIiwiZWwiLCJ0b2FzdCIsInJvdXRlciIsIm0iLCJib3JkZXIiLCJoIiwidyIsInRleHRBbGlnbiIsImJvcmRlclJhZGl1cyIsInNyYyIsIkltYWdlcyIsImFsdCIsImJvcmRlclRvcExlZnRSYWRpdXMiLCJib3JkZXJUb3BSaWdodFJhZGl1cyIsIlRpdGxlIiwianVzdGlmeUNvbnRlbnQiLCJwIiwiYmciLCJjb2xvciIsImN1cnNvciIsIm9uQ2xpY2siLCJkYXRhIiwicG9zdCIsInBvc2l0aW9uIiwiZGVzY3JpcHRpb24iLCJzdGF0dXMiLCJkdXJhdGlvbiIsImlzQ2xvc2FibGUiLCJocmVmIiwiaWQiLCJ0b1N0cmluZyIsInRleHREZWNvcmF0aW9uIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./Component/cards.jsx\n");
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(210);
+/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(514);
+/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(853);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(648);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__, axios__WEBPACK_IMPORTED_MODULE_3__]);
+([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__, axios__WEBPACK_IMPORTED_MODULE_3__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+
+const Cards = ({
+  el
+}) => {
+  const toast = (0,_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.useToast)();
+  const router = (0,next_router__WEBPACK_IMPORTED_MODULE_2__.useRouter)();
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.Box, {
+    m: "auto",
+    border: "1px solid #679b64",
+    h: "350px",
+    w: "340px",
+    textAlign: "center",
+    borderRadius: "10px",
+    children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.Image, {
+      src: el.Images[2],
+      h: "240px",
+      w: "100%",
+      alt: "movie",
+      borderTopLeftRadius: "10px",
+      borderTopRightRadius: "10px"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.Text, {
+      children: ["Movie Name : ", el.Title]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.Flex, {
+      justifyContent: "space-between",
+      p: "2",
+      children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.Button, {
+        border: "none",
+        bg: "teal",
+        color: "white",
+        p: "5",
+        borderRadius: "5",
+        cursor: "pointer",
+        onClick: async () => {
+          let data = await axios__WEBPACK_IMPORTED_MODULE_3__["default"].post("https://mockserver-rny6.onrender.com/cart", _objectSpread({}, el));
+          toast({
+            position: "top",
+            description: "Movie has been added your watchlist",
+            status: 'success',
+            duration: 3000,
+            isClosable: true
+          });
+        },
+        children: "Add to Watch List"
+      }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx(next_Link__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        href: el.id.toString(),
+        children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.Button, {
+          border: "none",
+          color: "white",
+          bg: "red",
+          p: "5",
+          borderRadius: "5",
+          textDecoration: "none",
+          cursor: "pointer",
+          children: "More Details"
+        })
+      })]
+    })]
+  }, el.id);
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Cards);
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ 265:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home),\n/* harmony export */   \"getServerSideProps\": () => (/* binding */ getServerSideProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @chakra-ui/react */ \"@chakra-ui/react\");\n/* harmony import */ var _Component_cards__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Component/cards */ \"./Component/cards.jsx\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__, _Component_cards__WEBPACK_IMPORTED_MODULE_2__]);\n([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__, _Component_cards__WEBPACK_IMPORTED_MODULE_2__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\nfunction Home({ data  }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Text, {\n                fontSize: \"24px\",\n                textAlign: \"Center\",\n                color: \"teal\",\n                children: \"Movie List\"\n            }, void 0, false, {\n                fileName: \"E:\\\\nextjsfirstdeploy\\\\simplemovieapp\\\\pages\\\\index.js\",\n                lineNumber: 9,\n                columnNumber: 5\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Grid, {\n                templateColumns: \"repeat(3, 1fr)\",\n                m: \"auto\",\n                justifyContent: \"space-evenly\",\n                gap: \"6\",\n                p: \"10\",\n                children: data.map((el)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.GridItem, {\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_Component_cards__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n                            el: el\n                        }, void 0, false, {\n                            fileName: \"E:\\\\nextjsfirstdeploy\\\\simplemovieapp\\\\pages\\\\index.js\",\n                            lineNumber: 13,\n                            columnNumber: 7\n                        }, this)\n                    }, el.id, false, {\n                        fileName: \"E:\\\\nextjsfirstdeploy\\\\simplemovieapp\\\\pages\\\\index.js\",\n                        lineNumber: 12,\n                        columnNumber: 7\n                    }, this))\n            }, void 0, false, {\n                fileName: \"E:\\\\nextjsfirstdeploy\\\\simplemovieapp\\\\pages\\\\index.js\",\n                lineNumber: 10,\n                columnNumber: 5\n            }, this)\n        ]\n    }, void 0, true);\n}\nasync function getServerSideProps() {\n    // Fetch data from external API\n    const res = await fetch(`https://mockserver-rny6.onrender.com/movies`);\n    const data = await res.json();\n    // Pass data to the page via props\n    return {\n        props: {\n            data: data\n        }\n    };\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7QUFBQTtBQUFtRDtBQUNiO0FBR3ZCLFNBQVNJLEtBQUssRUFBQ0MsS0FBSSxFQUFDLEVBQUU7SUFFbkMscUJBQ0U7OzBCQUNBLDhEQUFDSCxrREFBSUE7Z0JBQUNJLFVBQVM7Z0JBQU9DLFdBQVc7Z0JBQVVDLE9BQU07MEJBQU87Ozs7OzswQkFDeEQsOERBQUNSLGtEQUFJQTtnQkFBQ1MsaUJBQWdCO2dCQUFpQkMsR0FBRTtnQkFBUUMsZ0JBQWU7Z0JBQWVDLEtBQUk7Z0JBQUlDLEdBQUU7MEJBQ3ZGUixLQUFLUyxHQUFHLENBQUMsQ0FBQ0MsbUJBQ1YsOERBQUNkLHNEQUFRQTtrQ0FDVCw0RUFBQ0Usd0RBQUtBOzRCQUFDWSxJQUFJQTs7Ozs7O3VCQURJQSxHQUFHQyxFQUFFOzs7Ozs7Ozs7Ozs7QUFPMUIsQ0FBQztBQUNNLGVBQWVDLHFCQUFxQjtJQUN6QywrQkFBK0I7SUFDL0IsTUFBTUMsTUFBTSxNQUFNQyxNQUFNLENBQUMsMkNBQTJDLENBQUM7SUFDckUsTUFBTWQsT0FBTyxNQUFNYSxJQUFJRSxJQUFJO0lBRTNCLGtDQUFrQztJQUNsQyxPQUFPO1FBQUVDLE9BQU87WUFBRWhCLE1BQUtBO1FBQUs7SUFBRTtBQUNoQyxDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbW92aWVhcHAvLi9wYWdlcy9pbmRleC5qcz9iZWU3Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7R3JpZCxHcmlkSXRlbSxUZXh0fSBmcm9tIFwiQGNoYWtyYS11aS9yZWFjdFwiXG5pbXBvcnQgQ2FyZHMgZnJvbSBcIi4uL0NvbXBvbmVudC9jYXJkc1wiXG5cblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZSh7ZGF0YX0pIHtcblxuICByZXR1cm4gKFxuICAgIDw+XG4gICAgPFRleHQgZm9udFNpemU9XCIyNHB4XCIgdGV4dEFsaWduPXtcIkNlbnRlclwifSBjb2xvcj1cInRlYWxcIj5Nb3ZpZSBMaXN0PC9UZXh0PlxuICAgIDxHcmlkIHRlbXBsYXRlQ29sdW1ucz0ncmVwZWF0KDMsIDFmciknIG09XCJhdXRvXCIgIGp1c3RpZnlDb250ZW50PVwic3BhY2UtZXZlbmx5XCIgZ2FwPVwiNlwiIHA9XCIxMFwiPlxuICAgICB7ZGF0YS5tYXAoKGVsKT0+KFxuICAgICAgPEdyaWRJdGVtIGtleT17ZWwuaWR9PlxuICAgICAgPENhcmRzIGVsPXtlbH0vPlxuICAgICAgPC9HcmlkSXRlbT5cbiAgICAgKSl9XG4gICAgPC9HcmlkID5cbiAgICA8Lz5cbiAgKVxufVxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFNlcnZlclNpZGVQcm9wcygpIHtcbiAgLy8gRmV0Y2ggZGF0YSBmcm9tIGV4dGVybmFsIEFQSVxuICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChgaHR0cHM6Ly9tb2Nrc2VydmVyLXJueTYub25yZW5kZXIuY29tL21vdmllc2ApXG4gIGNvbnN0IGRhdGEgPSBhd2FpdCByZXMuanNvbigpXG5cbiAgLy8gUGFzcyBkYXRhIHRvIHRoZSBwYWdlIHZpYSBwcm9wc1xuICByZXR1cm4geyBwcm9wczogeyBkYXRhOmRhdGEgfSB9XG59Il0sIm5hbWVzIjpbIkdyaWQiLCJHcmlkSXRlbSIsIlRleHQiLCJDYXJkcyIsIkhvbWUiLCJkYXRhIiwiZm9udFNpemUiLCJ0ZXh0QWxpZ24iLCJjb2xvciIsInRlbXBsYXRlQ29sdW1ucyIsIm0iLCJqdXN0aWZ5Q29udGVudCIsImdhcCIsInAiLCJtYXAiLCJlbCIsImlkIiwiZ2V0U2VydmVyU2lkZVByb3BzIiwicmVzIiwiZmV0Y2giLCJqc29uIiwicHJvcHMiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/index.js\n");
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Home),
+/* harmony export */   "getServerSideProps": () => (/* binding */ getServerSideProps)
+/* harmony export */ });
+/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(210);
+/* harmony import */ var _Component_cards__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(591);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__, _Component_cards__WEBPACK_IMPORTED_MODULE_1__]);
+([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__, _Component_cards__WEBPACK_IMPORTED_MODULE_1__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+
+
+
+
+
+function Home({
+  data
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.Text, {
+      fontSize: "24px",
+      textAlign: "Center",
+      color: "teal",
+      children: "Movie List"
+    }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.Grid, {
+      templateColumns: "repeat(3, 1fr)",
+      m: "auto",
+      justifyContent: "space-evenly",
+      gap: "6",
+      p: "10",
+      children: data.map(el => /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.GridItem, {
+        children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx(_Component_cards__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
+          el: el
+        })
+      }, el.id))
+    })]
+  });
+}
+async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`https://mockserver-rny6.onrender.com/movies`);
+  const data = await res.json(); // Pass data to the page via props
+
+  return {
+    props: {
+      data: data
+    }
+  };
+}
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ }),
 
-/***/ "next/Link":
-/*!****************************!*\
-  !*** external "next/Link" ***!
-  \****************************/
+/***/ 514:
 /***/ ((module) => {
 
 module.exports = require("next/Link");
 
 /***/ }),
 
-/***/ "next/router":
-/*!******************************!*\
-  !*** external "next/router" ***!
-  \******************************/
+/***/ 853:
 /***/ ((module) => {
 
 module.exports = require("next/router");
 
 /***/ }),
 
-/***/ "react/jsx-dev-runtime":
-/*!****************************************!*\
-  !*** external "react/jsx-dev-runtime" ***!
-  \****************************************/
+/***/ 997:
 /***/ ((module) => {
 
-module.exports = require("react/jsx-dev-runtime");
+module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
-/***/ "@chakra-ui/react":
-/*!***********************************!*\
-  !*** external "@chakra-ui/react" ***!
-  \***********************************/
+/***/ 210:
 /***/ ((module) => {
 
 module.exports = import("@chakra-ui/react");;
 
 /***/ }),
 
-/***/ "axios":
-/*!************************!*\
-  !*** external "axios" ***!
-  \************************/
+/***/ 648:
 /***/ ((module) => {
 
 module.exports = import("axios");;
@@ -90,7 +202,7 @@ module.exports = import("axios");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./pages/index.js"));
+var __webpack_exports__ = (__webpack_exec__(265));
 module.exports = __webpack_exports__;
 
 })();
