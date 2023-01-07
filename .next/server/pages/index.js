@@ -78,7 +78,7 @@ const Cards = ({
           });
         },
         children: "Add to Watch List"
-      }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx(next_Link__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx((next_Link__WEBPACK_IMPORTED_MODULE_1___default()), {
         href: el.id.toString(),
         children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_0__.Button, {
           border: "none",

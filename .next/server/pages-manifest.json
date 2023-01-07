@@ -1,11 +1,11 @@
 {
-  "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/api/hello": "pages/api/hello.js",
   "/": "pages/index.js",
+  "/[id]": "pages/[id].js",
   "/watchlist": "pages/watchlist.js",
+  "/_app": "pages/_app.js",
   "/navbar": "pages/navbar.html",
   "/_error": "pages/_error.js",
-  "/[id]": "pages/[id].js",
   "/404": "pages/404.html"
 }
